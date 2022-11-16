@@ -13,6 +13,9 @@ class TestReplayData(TestCase):
 
         self.json_data = demo_parser.parse(return_type="json", clean=True)
 
+    def tearDown(self) -> None:
+        pass
+
     def test_replay_parsing(self) -> None:
         replay_data = ReplayData(json_data=self.json_data, load_player_data=False, load_round_data=False)
         self.assertIsNotNone(replay_data)
@@ -28,3 +31,13 @@ class TestReplayData(TestCase):
         self.assertNotEqual(replay_data.number_of_players, 0)
         for i in range(0, replay_data.number_of_players):
             self.assertIsNotNone(replay_data.get_player_by_index(index=i))
+
+    def test_get_player_by_name(self) -> None:
+        replay_data = ReplayData(json_data=self.json_data, load_player_data=True, load_round_data=False)
+        for i in range(0, replay_data.number_of_players):
+            target = replay_data.get_player_by_index(index=0)
+            self.assertIsNotNone(target)
+            result = replay_data.get_player_by_name(player_name=target.player_name)
+            self.assertIsNotNone(result)
+            self.assertEqual(target, result)
+

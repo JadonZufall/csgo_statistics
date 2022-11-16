@@ -61,3 +61,7 @@ class PlayerData:
 
         # Molotov data
         self._fire_thrown = json_data["fireThrown"]
+
+    @property
+    def player_name(self) -> str:
+        return self._player_name

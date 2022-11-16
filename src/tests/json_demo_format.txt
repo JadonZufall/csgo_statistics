@@ -1,0 +1,500 @@
+matchID: <class 'str'>
+clientName: <class 'str'>
+mapName: <class 'str'>
+tickRate: <class 'int'>
+playbackTicks: <class 'int'>
+playbackFramesCount: <class 'int'>
+parsedToFrameIdx: <class 'int'>
+parserParameters: <class 'dict'>
+{
+  parseRate: <class 'int'>
+  parseFrames: <class 'bool'>
+  parseKillFrames: <class 'bool'>
+  tradeTime: <class 'int'>
+  roundBuyStyle: <class 'str'>
+  damagesRolledUp: <class 'bool'>
+}
+serverVars: <class 'dict'>
+{
+  cashBombDefused: <class 'int'>
+  cashBombPlanted: <class 'int'>
+  cashTeamTWinBomb: <class 'int'>
+  cashWinDefuse: <class 'int'>
+  cashWinTimeRunOut: <class 'int'>
+  cashWinElimination: <class 'int'>
+  cashPlayerKilledDefault: <class 'int'>
+  cashTeamLoserBonus: <class 'int'>
+  cashTeamLoserBonusConsecutive: <class 'int'>
+  roundTime: <class 'int'>
+  roundTimeDefuse: <class 'int'>
+  roundRestartDelay: <class 'int'>
+  freezeTime: <class 'int'>
+  buyTime: <class 'int'>
+  bombTimer: <class 'int'>
+  maxRounds: <class 'int'>
+  timeoutsAllowed: <class 'int'>
+  coachingAllowed: <class 'int'>
+}
+matchPhases: <class 'dict'>
+{
+  announcementLastRoundHalf: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  announcementFinalRound: <class 'list'>
+  [
+    NoneType
+  ]
+  announcementMatchStarted: <class 'list'>
+  [
+    NoneType
+  ]
+  roundStarted: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  roundEnded: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  roundFreezetimeEnded: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  roundEndedOfficial: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  gameHalfEnded: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  matchStart: <class 'list'>
+  [
+    NoneType
+  ]
+  matchStartedChanged: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  warmupChanged: <class 'list'>
+  [
+    <class 'int'>
+  ]
+  teamSwitch: <class 'list'>
+  [
+    <class 'int'>
+  ]
+}
+matchmakingRanks: <class 'list'>
+[
+  NoneType
+]
+playerConnections: <class 'list'>
+[
+  {
+    tick: <class 'int'>
+    action: <class 'str'>
+    steamID: <class 'int'>
+  }
+]
+gameRounds: <class 'list'>
+[
+  {
+    roundNum: <class 'int'>
+    isWarmup: <class 'bool'>
+    startTick: <class 'int'>
+    freezeTimeEndTick: <class 'int'>
+    endTick: <class 'int'>
+    endOfficialTick: <class 'int'>
+    bombPlantTick: <class 'NoneType'>
+    tScore: <class 'int'>
+    ctScore: <class 'int'>
+    endTScore: <class 'int'>
+    endCTScore: <class 'int'>
+    ctTeam: <class 'str'>
+    tTeam: <class 'str'>
+    winningSide: <class 'str'>
+    winningTeam: <class 'str'>
+    losingTeam: <class 'str'>
+    roundEndReason: <class 'str'>
+    ctFreezeTimeEndEqVal: <class 'int'>
+    ctRoundStartEqVal: <class 'int'>
+    ctRoundSpendMoney: <class 'int'>
+    ctBuyType: <class 'str'>
+    tFreezeTimeEndEqVal: <class 'int'>
+    tRoundStartEqVal: <class 'int'>
+    tRoundSpendMoney: <class 'int'>
+    tBuyType: <class 'str'>
+    ctSide: <class 'dict'>
+    {
+      teamName: <class 'str'>
+      players: <class 'list'>
+      [
+        {
+          playerName: <class 'str'>
+          steamID: <class 'int'>
+        }
+      ]
+    }
+    tSide: <class 'dict'>
+    {
+      teamName: <class 'str'>
+      players: <class 'list'>
+      [
+        {
+          playerName: <class 'str'>
+          steamID: <class 'int'>
+        }
+      ]
+    }
+    kills: <class 'list'>
+    [
+      {
+        tick: <class 'int'>
+        seconds: <class 'float'>
+        clockTime: <class 'str'>
+        attackerSteamID: <class 'int'>
+        attackerName: <class 'str'>
+        attackerTeam: <class 'str'>
+        attackerSide: <class 'str'>
+        attackerX: <class 'float'>
+        attackerY: <class 'float'>
+        attackerZ: <class 'float'>
+        attackerViewX: <class 'float'>
+        attackerViewY: <class 'float'>
+        victimSteamID: <class 'int'>
+        victimName: <class 'str'>
+        victimTeam: <class 'str'>
+        victimSide: <class 'str'>
+        victimX: <class 'float'>
+        victimY: <class 'float'>
+        victimZ: <class 'float'>
+        victimViewX: <class 'float'>
+        victimViewY: <class 'float'>
+        assisterSteamID: <class 'NoneType'>
+        assisterName: <class 'NoneType'>
+        assisterTeam: <class 'NoneType'>
+        assisterSide: <class 'NoneType'>
+        isSuicide: <class 'bool'>
+        isTeamkill: <class 'bool'>
+        isWallbang: <class 'bool'>
+        penetratedObjects: <class 'int'>
+        isFirstKill: <class 'bool'>
+        isHeadshot: <class 'bool'>
+        victimBlinded: <class 'bool'>
+        attackerBlinded: <class 'bool'>
+        flashThrowerSteamID: <class 'NoneType'>
+        flashThrowerName: <class 'NoneType'>
+        flashThrowerTeam: <class 'NoneType'>
+        flashThrowerSide: <class 'NoneType'>
+        noScope: <class 'bool'>
+        thruSmoke: <class 'bool'>
+        distance: <class 'float'>
+        isTrade: <class 'bool'>
+        playerTradedName: <class 'NoneType'>
+        playerTradedTeam: <class 'NoneType'>
+        playerTradedSteamID: <class 'NoneType'>
+        weapon: <class 'str'>
+        weaponClass: <class 'str'>
+      }
+    ]
+    damages: <class 'list'>
+    [
+      {
+        tick: <class 'int'>
+        seconds: <class 'float'>
+        clockTime: <class 'str'>
+        attackerSteamID: <class 'int'>
+        attackerName: <class 'str'>
+        attackerTeam: <class 'str'>
+        attackerSide: <class 'str'>
+        attackerX: <class 'float'>
+        attackerY: <class 'float'>
+        attackerZ: <class 'float'>
+        attackerViewX: <class 'float'>
+        attackerViewY: <class 'float'>
+        attackerStrafe: <class 'bool'>
+        victimSteamID: <class 'int'>
+        victimName: <class 'str'>
+        victimTeam: <class 'str'>
+        victimSide: <class 'str'>
+        victimX: <class 'float'>
+        victimY: <class 'float'>
+        victimZ: <class 'float'>
+        victimViewX: <class 'float'>
+        victimViewY: <class 'float'>
+        weapon: <class 'str'>
+        weaponClass: <class 'str'>
+        hpDamage: <class 'int'>
+        hpDamageTaken: <class 'int'>
+        armorDamage: <class 'int'>
+        armorDamageTaken: <class 'int'>
+        hitGroup: <class 'str'>
+        isFriendlyFire: <class 'bool'>
+        distance: <class 'float'>
+        zoomLevel: <class 'int'>
+      }
+    ]
+    grenades: <class 'list'>
+    [
+      {
+        throwTick: <class 'int'>
+        destroyTick: <class 'int'>
+        throwSeconds: <class 'float'>
+        throwClockTime: <class 'str'>
+        destroySeconds: <class 'float'>
+        destroyClockTime: <class 'str'>
+        throwerSteamID: <class 'int'>
+        throwerName: <class 'str'>
+        throwerTeam: <class 'str'>
+        throwerSide: <class 'str'>
+        throwerX: <class 'float'>
+        throwerY: <class 'float'>
+        throwerZ: <class 'float'>
+        grenadeType: <class 'str'>
+        grenadeX: <class 'float'>
+        grenadeY: <class 'float'>
+        grenadeZ: <class 'float'>
+        entityId: <class 'int'>
+      }
+    ]
+    bombEvents: <class 'list'>
+    [
+      NoneType
+    ]
+    weaponFires: <class 'list'>
+    [
+      {
+        tick: <class 'int'>
+        seconds: <class 'float'>
+        clockTime: <class 'str'>
+        playerSteamID: <class 'int'>
+        playerName: <class 'str'>
+        playerTeam: <class 'str'>
+        playerSide: <class 'str'>
+        playerX: <class 'float'>
+        playerY: <class 'float'>
+        playerZ: <class 'float'>
+        playerViewX: <class 'float'>
+        playerViewY: <class 'float'>
+        playerStrafe: <class 'bool'>
+        weapon: <class 'str'>
+        weaponClass: <class 'str'>
+        ammoInMagazine: <class 'int'>
+        ammoInReserve: <class 'int'>
+        zoomLevel: <class 'int'>
+      }
+    ]
+    flashes: <class 'list'>
+    [
+      {
+        tick: <class 'int'>
+        seconds: <class 'float'>
+        clockTime: <class 'str'>
+        attackerSteamID: <class 'int'>
+        attackerName: <class 'str'>
+        attackerTeam: <class 'str'>
+        attackerSide: <class 'str'>
+        attackerX: <class 'float'>
+        attackerY: <class 'float'>
+        attackerZ: <class 'float'>
+        attackerViewX: <class 'float'>
+        attackerViewY: <class 'float'>
+        playerSteamID: <class 'int'>
+        playerName: <class 'str'>
+        playerTeam: <class 'str'>
+        playerSide: <class 'str'>
+        playerX: <class 'float'>
+        playerY: <class 'float'>
+        playerZ: <class 'float'>
+        playerViewX: <class 'float'>
+        playerViewY: <class 'float'>
+        flashDuration: <class 'float'>
+      }
+    ]
+    frames: <class 'list'>
+    [
+      {
+        isKillFrame: <class 'bool'>
+        tick: <class 'int'>
+        seconds: <class 'float'>
+        clockTime: <class 'str'>
+        t: <class 'dict'>
+        {
+          side: <class 'str'>
+          teamName: <class 'str'>
+          teamEqVal: <class 'int'>
+          alivePlayers: <class 'int'>
+          totalUtility: <class 'int'>
+          players: <class 'list'>
+          [
+            {
+              steamID: <class 'int'>
+              name: <class 'str'>
+              team: <class 'str'>
+              side: <class 'str'>
+              x: <class 'float'>
+              y: <class 'float'>
+              z: <class 'float'>
+              eyeX: <class 'float'>
+              eyeY: <class 'float'>
+              eyeZ: <class 'float'>
+              velocityX: <class 'float'>
+              velocityY: <class 'float'>
+              velocityZ: <class 'int'>
+              viewX: <class 'float'>
+              viewY: <class 'float'>
+              hp: <class 'int'>
+              armor: <class 'int'>
+              activeWeapon: <class 'str'>
+              flashGrenades: <class 'int'>
+              smokeGrenades: <class 'int'>
+              heGrenades: <class 'int'>
+              fireGrenades: <class 'int'>
+              totalUtility: <class 'int'>
+              lastPlaceName: <class 'str'>
+              isAlive: <class 'bool'>
+              isBot: <class 'bool'>
+              isBlinded: <class 'bool'>
+              isAirborne: <class 'bool'>
+              isDucking: <class 'bool'>
+              isDuckingInProgress: <class 'bool'>
+              isUnDuckingInProgress: <class 'bool'>
+              isDefusing: <class 'bool'>
+              isPlanting: <class 'bool'>
+              isReloading: <class 'bool'>
+              isInBombZone: <class 'bool'>
+              isInBuyZone: <class 'bool'>
+              isStanding: <class 'bool'>
+              isScoped: <class 'bool'>
+              isWalking: <class 'bool'>
+              isUnknown: <class 'bool'>
+              inventory: <class 'list'>
+              [
+                {
+                  weaponName: <class 'str'>
+                  weaponClass: <class 'str'>
+                  ammoInMagazine: <class 'int'>
+                  ammoInReserve: <class 'int'>
+                }
+              ]
+              spotters: <class 'list'>
+              [
+                NoneType
+              ]
+              equipmentValue: <class 'int'>
+              equipmentValueFreezetimeEnd: <class 'int'>
+              equipmentValueRoundStart: <class 'int'>
+              cash: <class 'int'>
+              cashSpendThisRound: <class 'int'>
+              cashSpendTotal: <class 'int'>
+              hasHelmet: <class 'bool'>
+              hasDefuse: <class 'bool'>
+              hasBomb: <class 'bool'>
+              ping: <class 'int'>
+              zoomLevel: <class 'int'>
+            }
+          ]
+        }
+        ct: <class 'dict'>
+        {
+          side: <class 'str'>
+          teamName: <class 'str'>
+          teamEqVal: <class 'int'>
+          alivePlayers: <class 'int'>
+          totalUtility: <class 'int'>
+          players: <class 'list'>
+          [
+            {
+              steamID: <class 'int'>
+              name: <class 'str'>
+              team: <class 'str'>
+              side: <class 'str'>
+              x: <class 'float'>
+              y: <class 'float'>
+              z: <class 'float'>
+              eyeX: <class 'float'>
+              eyeY: <class 'float'>
+              eyeZ: <class 'float'>
+              velocityX: <class 'float'>
+              velocityY: <class 'float'>
+              velocityZ: <class 'int'>
+              viewX: <class 'float'>
+              viewY: <class 'float'>
+              hp: <class 'int'>
+              armor: <class 'int'>
+              activeWeapon: <class 'str'>
+              flashGrenades: <class 'int'>
+              smokeGrenades: <class 'int'>
+              heGrenades: <class 'int'>
+              fireGrenades: <class 'int'>
+              totalUtility: <class 'int'>
+              lastPlaceName: <class 'str'>
+              isAlive: <class 'bool'>
+              isBot: <class 'bool'>
+              isBlinded: <class 'bool'>
+              isAirborne: <class 'bool'>
+              isDucking: <class 'bool'>
+              isDuckingInProgress: <class 'bool'>
+              isUnDuckingInProgress: <class 'bool'>
+              isDefusing: <class 'bool'>
+              isPlanting: <class 'bool'>
+              isReloading: <class 'bool'>
+              isInBombZone: <class 'bool'>
+              isInBuyZone: <class 'bool'>
+              isStanding: <class 'bool'>
+              isScoped: <class 'bool'>
+              isWalking: <class 'bool'>
+              isUnknown: <class 'bool'>
+              inventory: <class 'list'>
+              [
+                {
+                  weaponName: <class 'str'>
+                  weaponClass: <class 'str'>
+                  ammoInMagazine: <class 'int'>
+                  ammoInReserve: <class 'int'>
+                }
+              ]
+              spotters: <class 'list'>
+              [
+                NoneType
+              ]
+              equipmentValue: <class 'int'>
+              equipmentValueFreezetimeEnd: <class 'int'>
+              equipmentValueRoundStart: <class 'int'>
+              cash: <class 'int'>
+              cashSpendThisRound: <class 'int'>
+              cashSpendTotal: <class 'int'>
+              hasHelmet: <class 'bool'>
+              hasDefuse: <class 'bool'>
+              hasBomb: <class 'bool'>
+              ping: <class 'int'>
+              zoomLevel: <class 'int'>
+            }
+          ]
+        }
+        bombPlanted: <class 'bool'>
+        bombsite: <class 'str'>
+        bomb: <class 'dict'>
+        {
+          x: <class 'float'>
+          y: <class 'float'>
+          z: <class 'float'>
+        }
+        projectiles: <class 'list'>
+        [
+          NoneType
+        ]
+        smokes: <class 'list'>
+        [
+          NoneType
+        ]
+        fires: <class 'list'>
+        [
+          NoneType
+        ]
+      }
+    ]
+  }
+]

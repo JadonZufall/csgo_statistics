@@ -1,6 +1,9 @@
 # Counterstrike demo files
 *.dem
 
+# Parsed Counterstrike demo files
+*.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

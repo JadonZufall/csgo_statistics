@@ -1,6 +1,6 @@
 from awpy.analytics.stats import player_stats
 
-from utils.linear_search import linear_search
+from src.utils.linear_search import linear_search
 
 from src.player_data import PlayerData
 from src.round_data import RoundData
@@ -24,8 +24,8 @@ class ReplayData:
         self._round_full_endings: list[int] = json_data["matchPhases"]["roundEndedOfficial"]
 
         # Game start tick and team switch tick
-        self._match_start: list[int] = json_data["matchPhases"]["matchStart"][-1]
-        self._team_switch: list[int] = json_data["matchPhases"]["teamSwitch"][-1]
+        self._match_start: list[int] = json_data["matchPhases"]["matchStart"]
+        self._team_switch: list[int] = json_data["matchPhases"]["teamSwitch"]
 
         # Player competitive ranks
         self._comp_ranks: list[str] = json_data["matchmakingRanks"]

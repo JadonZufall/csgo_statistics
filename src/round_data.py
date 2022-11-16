@@ -12,9 +12,9 @@ class RoundData:
 
         # Objective
         self._bomb_plant_tick: int = json_data["bombPlantTick"]
-        self._bomb_planted: bool = json_data["bombPlanted"]
-        self._bomb_site: str = json_data["bombsite"]
-        self._plant_pos: dict[str, int] = json_data["bomb"]
+        self._bomb_planted: bool = True if self._bomb_plant_tick else False
+        self._bomb_site: str = json_data.get("bombsite")
+        self._plant_pos: dict[str, int] = json_data.get("bomb")
 
         # Scoring
         self._t_score: int = json_data["tScore"]
@@ -43,9 +43,6 @@ class RoundData:
         self._damages: list[dict] = json_data["damages"]
         self._grenades: list[dict] = json_data["grenades"]
         self._flashes: list[dict] = json_data["flashes"]
-        self._fires: list[dict] = json_data["fires"]
-        self._smokes: list[dict] = json_data["smokes"]
-        self._projectiles = list[dict] = json_data["projectiles"]
         self._bomb_events: list[dict] = json_data["bombEvents"]
         self._weapon_fires: list[dict] = json_data["weaponFires"]
         self._frames: list[dict] = json_data["frames"]
